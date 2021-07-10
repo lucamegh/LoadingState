@@ -1,4 +1,4 @@
-# LoadingState
+# LoadingState 🚦
 
 A generic type to describe loading states.
 
