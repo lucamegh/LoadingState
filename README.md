@@ -1,6 +1,6 @@
 # LoadingState 🚦
 
-A generic type to describe loading states.
+A generic type to describe loading states, primarly developed to power [AsyncUI](https://github.com/lucamegh/AsyncUI).
 
 ```swift
 enum LoadingState<Success, Failure: Error> {
