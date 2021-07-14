@@ -114,7 +114,7 @@ You can also take advantage of loading states to enhance your Combine pipelines 
 
 ```swift
 func image(at url: URL, imageDownloader: ImageDownloader = .shared) -> AnyPublisher<LoadingState<UIImage, Error>, Never> {
-    let subject = CurrentValueSubject<LoadingState<UIImage, Error>, Never>(.inProgress)
+    let subject = CurrentValueSubject<LoadingState<UIImage, Error>, Never>(.idle)
     imageDownloader.shared.downloadImage(at: url) { result in
         subject.value = .finished(result)
     }
